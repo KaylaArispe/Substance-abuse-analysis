@@ -1,0 +1,38 @@
+---
+title: "Analysis"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(descr)
+library(knitr)
+library(dplyr)
+library(lsr)
+library(psych)
+library(haven)
+library(labelled)
+```
+
+```{r}
+file_path<-file.path("..","data","data.sav")
+df<-read_sav(file_path)
+head(df)
+```
+
+```{r}
+codebook <- look_for(df)
+
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+describe(df)
+```
+
+```{r}
+ freq(as.ordered(df$W1_E4), plot = FALSE)
+```
