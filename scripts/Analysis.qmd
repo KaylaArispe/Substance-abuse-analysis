@@ -3,6 +3,8 @@ title: "Analysis"
 format: html
 ---
 
+# substance abuse analysis
+
 ```{r}
 library(tidyverse)
 library(descr)
@@ -25,6 +27,8 @@ codebook <- look_for(df)
 
 ```
 
+\
+
 ```{r}
 glimpse(df)
 ```
@@ -35,4 +39,12 @@ describe(df)
 
 ```{r}
  freq(as.ordered(df$W1_E4), plot = FALSE)
+```
+
+```{r}
+ freq(as.ordered(df$W2_QG_1), plot = FALSE)
+```
+
+```{r}
+freq(as.ordered(df$PPETHM), plot = FALSE)
 ```
