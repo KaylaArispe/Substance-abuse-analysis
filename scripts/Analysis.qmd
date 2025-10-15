@@ -37,7 +37,7 @@ glimpse(df)
 describe(df)
 ```
 
-The frequency tables below will describe if other races would be willing to date outside their race, seeing how people feel towards more people dating different races, and which races that will be used for my data. First so I can determine how many people will and will not date outside their race, so I can put them in two different groups. then I would see how people of different races feel towards interracial dating so i can put them in a seperate group.
+The frequency tables below will describe if other races would be willing to date outside their race, seeing how people feel towards more people dating different races, and which races that will be used for my data. First so I can determine how many people will and will not date outside their race, so I can put them in two different groups. then I would see how people of different races feel towards interracial dating so i can put them in a separate group.
 
 ```{r}
  freq(as.ordered(df$W1_E4), plot = FALSE)
